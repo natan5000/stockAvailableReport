@@ -1,0 +1,916 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Open+Sans:400,400i,600,600i|Montserrat:400,700);
+
+
+* { transition: all .2s ease; }
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+
+
+
+
+body {
+  line-height: 1.9em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  z-index: 0;
+  background: #fff;
+  color: #25292a;
+ }
+  
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+  h2 {
+    padding-top: 2em;
+    text-align: center;
+    font-size: 2.2em;
+    color: #25292a;
+  }
+    h2:after {
+      height: .8em;
+      width: 2.3em;
+      margin: 0 auto 1em;
+      content: '';
+      display: block;
+      position: relative;
+      border-bottom: .1em solid #d82133;
+    }
+  h3 {
+    font-size: 1.8em;
+    color: black;
+  }
+  
+  h6 {
+    font-size: 1.2em;
+    color: #d82133;
+  }
+
+
+p {
+  padding: 0 0 .7em;
+}
+
+
+.fs14{
+  font-size: 1rem;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+i, em {font-style: italic;}
+
+b, strong {font-weight: bold;}
+
+
+
+/*custom styles*/
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+
+.row {
+  clear:both;
+}
+
+
+.contwidth {
+  margin: 0 auto;
+  width: 80em;
+}
+
+
+#logo2 img {
+  margin-right: 85%;
+  margin-top: 8px;
+  width: 65px;
+} 
+
+
+.twocol {
+  width: 39em;
+  float: left;
+}
+  .twocol:first-of-type {
+    padding-right: 2em;
+  }
+ 
+.header1 {
+  text-align: center;
+  background: #25292a;
+  height: 80px;
+}
+  .logo2 img {
+    margin: 1em;
+  }    
+  .header1 .mainnav1 {
+    padding: 7.1em 7.1em 0 2em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    font-family: Arimo, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    background: #2b2d7c;
+    font-size: 1.1em;
+  }
+    .header1 .mainnav1 a {
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .header1 .mainnav1 li {
+      margin: 0 0 1.1em;
+    }
+    
+  /*.header .navbtn {
+    position: absolute;
+    top: 2.2em;
+    right: 2em;
+  }
+    .header .navbtn a {
+      font-size: 4em;
+      color: #fff;
+    }*/
+    .header1 .nav-trigger {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+    }
+    label[for="nav-trigger"] {
+      display: block;
+      width: .9em;
+      height: .6em;
+      padding: .2em;
+      position: fixed;
+      top: .4em;
+      right: .4em;
+      z-index: 3;
+      cursor: pointer;
+      font-size: 4em;
+      color:#fff;      
+      text-shadow: 0px 0px 2px #000;
+    }
+    .nav-trigger:checked + label {
+      right: 4.5em;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      text-shadow: none;
+    }
+    .nav-trigger:checked ~ .mainnav1 {
+        z-index: 2;
+        /*left: 200px;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
+    }
+
+
+    .sidenav1 {
+      position: fixed;
+      top: 100px;
+      right: 15px;
+    }
+      .sidenav1 li a {
+        width: 15px;
+        height: 16px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+      }
+      .sidenav1 li a span {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../images/nav_side.png) 0 0 no-repeat;
+      }
+      .sidenav1 li a:hover span, .sidenav1 li a:active span, .sidenav1 li a:focus span,
+      .sidenav1.selectnav1 li:nth-child(1) a span, .sidenav1.selectnav2 li:nth-child(2) a span, .sidenav1.selectnav3 li:nth-child(3) a span, .sidenav1.selectnav4 li:nth-child(4) a span, .sidenav1.selectnav5 li:nth-child(5) a span, .sidenav1.selectnav6 li:nth-child(6) a span {
+        background: url(../images/nav_side.png) 0 -23px no-repeat;
+      }
+
+#departmentsdiv {
+  height:600px; 
+  width:340px;
+  margin-left: 10px;
+}
+rolesdiv {
+  height:600px; 
+  width:700px;
+}
+
+.splash {
+  line-height: .5;
+  background: #d82133;
+}
+  .splash img {
+    width: 100%;
+  }
+
+
+#about {
+  padding-bottom: 4em;
+  background: #fff;
+  color: #75777d;
+}
+  #about h3 {
+    line-height: 2em;
+  }
+  #about p {
+    font-size: .9em;
+  }
+
+
+  .pills-danger .nav-link.active {
+    background-color: #4B515D!important;
+}
+
+.c1 {
+  cursor: pointer;
+  cursor: hand;
+}
+
+#values{
+  background: url(../images/splash02.jpg) top center no-repeat #292c2d;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  color: #fff;
+}
+#in_the_news {
+  background-color: white;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;  
+}
+ #in_the_news h2 {
+    color: #000;
+  }
+#in_the_news dt{
+	color: #D82133;
+    font-family: Arimo, sans-serif;
+    font-weight: bold;
+	font-size: 1.5em;
+	padding-bottom: 12px;
+	text-transform: uppercase;
+  }
+#in_the_news dd {
+	color: #25292A;
+	font-size: 1.2em;
+}
+#in_the_news li {
+    width: 32.6em;
+    height: 18.2em;
+    padding: 4em 4em 0;
+    margin: 0 7em 7em 0;
+    display: block;
+    float: left;
+    border: .15em solid #25292A;
+    font-size: .9em;
+  }
+  #in_the_news li:nth-child(2n+0) {
+    margin: 0 0 6em 0;
+  }
+  #in_the_news li:nth-child(5) {
+	margin: -2em 2em 2em 24em;	
+  }
+
+#press_content{
+	background-color: #FFF;	
+	min-height: calc(100vh - 286px);
+	display: block;
+	z-index: 2;
+}
+#press_page{
+	width: 63%;
+	margin: auto;
+	padding: 20px;
+	overflow: auto;
+}
+#press_page  h1 {
+    padding-top: 0.7em;
+    text-align: center;
+    font-size: 2.2em;
+	line-height: 1.4em;
+    color: #25292a;
+  }
+#press_page  h1:after {
+  height: .8em;
+  width: 2.3em;
+  margin: 0 auto 1em;
+  content: '';
+  display: block;
+  position: relative;
+  border-bottom: .1em solid #d82133;
+}
+#press_page  p {    
+    font-size: 1.1em;
+	line-height: 1.4em;
+}
+#press_page  h3{
+	padding: 30px 0px;
+}
+#about_tegra{
+	background-color: #EFEFEF;
+	padding: 25px 65px;
+	margin-top: 25px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#press_page #summary{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+a{
+	color: #d82133;
+}
+
+
+#foot-int {
+  text-align: center;
+  background: #282a31;
+ font-size: .9em;
+ color: #fff;
+ bottom: 0;
+ position:absolute;
+ width: 100%;;
+}
+
+
+#subsidiaries {
+  text-align: center;
+  padding-bottom: 8em;
+  background: url(../images/splash03.jpg) top center no-repeat #292c2d;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  color: #fff;
+}
+#subsidiaries h5 {
+  color: #fff;
+  font-size: 3.0em;
+  text-align: left;
+  padding-left: 8.1em;
+  padding-top: 2.1em;
+}
+
+
+#mainfooter {
+  text-align: center;
+  background: #282a31;
+  font-size: .9em;
+  color: #fff;
+}
+  #mainfooter ul.social {
+    padding: 2em 0;
+  }
+  #mainfooter ul.social li {
+    display: inline-block;
+    line-height: 45px;
+    margin: 0 .5em;
+  }
+    #mainfooter ul.social li a, #mainfooter ul.social li a:link, #mainfooter ul.social li a:visited {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      border-radius: 40px;
+      border: 2px solid #2b2d7c;
+    }
+    #mainfooter ul.social li a:hover, #mainfooter ul.social li a:active, #mainfooter ul.social li a:focus {
+      background: #b72025;
+      border: 2px solid #b72025;
+    }
+  
+  
+  #subsidiaries ul li a span {
+    height: 150px;
+  }
+
+
+
+
+/*media queries*/
+
+
+@media (max-width: 375px) /*XXs Breakpoint - Mobile*/ {
+  body {
+    font-size: 14px;
+  }
+  .logo img {
+    width: 200px;
+    margin: 1em;
+  }
+  .header1 .mainnav1 {
+    padding: 7.1em 4em 0 2em;
+  }
+  label[for="nav-trigger"] {
+    font-size: 3em;
+  }
+  .nav-trigger:checked + label {
+    right: 4em;
+  }
+  .contwidth {
+    width: 90%;
+  }
+  .twocol {
+    width: 100%;
+  }
+    .twocol:first-of-type {
+      padding-right: 0;
+    }
+  
+  .mapbox {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .mapbox .contwidth{
+    padding: 0;
+    margin: 0;
+  }
+  .mapbox ul {
+    top: -13.2em;
+    left: -5em;
+    -ms-transform: scale(0.16, 0.16); /* IE 9 */
+    -webkit-transform: scale(0.16, 0.16); /* Safari */
+    transform: scale(0.16, 0.16);
+  }
+  .mapbox li span {
+    width: 15em;
+    left: 200px;
+    -ms-transform: scale(3, 3); /* IE 9 */
+    -webkit-transform: scale(3, 3); /* Safari */
+    transform: scale(3, 3);
+  }
+    .mapbox li:nth-child(8) {
+      top: -21.5em;
+      left: -4em;
+    }
+    .mapbox li:nth-child(5) {
+      top: -7em;
+      left: -2em;
+    }
+    .mapbox li:nth-child(4) {
+      top: -2.5em;
+      left: -1em;
+    }
+    .mapbox li:nth-child(2) {
+      top: 7.5em;
+      left: -1.5em;
+    }
+  
+  #about h3 {
+    line-height: 1.3em;
+  }
+  
+  #missionvision label {
+    font-size: 1.2em;
+  }
+  .mvbox {
+    padding: 2em 0 0;
+  }
+  #vision .contwidth {
+    width: 80%;
+    padding: 2em 0 2.3em;
+  }
+  #vision {
+    padding-bottom: .3em;
+    height: auto;
+  }
+  #mission {
+    height: auto;
+  }
+  #values li {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    margin: 0 0 4em;
+    font-size: .9em;
+  }
+  #values li:nth-child(3n+0) {
+    margin: 0 0 4em;
+  }
+  #values dt {
+    font-size: 1.4em;
+  }  
+  #in_the_news li {
+    width: 92%;
+    
+    height: auto;
+    padding: 1em;
+    margin: 0 0 4em;
+    font-size: .9em;
+  }
+  /*#in_the_news li:nth-child(3n+0) {
+    margin: 0 0 4em;
+  }*/
+	
+  #in_the_news li:nth-child(5n+0) {
+	margin: -2em 2em 2em 24em;	
+  }
+  #in_the_news dt {
+    font-size: 1.4em;
+  }  
+  #subsidiaries ul li a span {
+    height: 150px;
+  }
+  
+}
+@media (max-width: 767px) /*Xs Breakpoint - Mobile*/ {
+  body {
+    font-size: 14px;
+  }
+  .logo img {
+    width: 200px;
+    margin: 1em;
+  }
+  .header1 .mainnav1 {
+    padding: 7.1em 4em 0 2em;
+  }
+  label[for="nav-trigger"] {
+    font-size: 3em;
+  }
+  .nav-trigger:checked + label {
+    right: 4.9em;
+  }
+  .contwidth {
+    width: 90%;
+  }
+  .twocol {
+    width: 100%;
+  }
+    .twocol:first-of-type {
+      padding-right: 0;
+    }
+  
+  .mapbox {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .mapbox .contwidth{
+    padding: 0;
+    margin: 0;
+  }
+  .mapbox ul {
+    top: -13.2em;
+    left: -5em;
+    -ms-transform: scale(0.16, 0.16); /* IE 9 */
+    -webkit-transform: scale(0.16, 0.16); /* Safari */
+    transform: scale(0.16, 0.16);
+  }
+  .mapbox li span {
+    left: 800px;
+    -ms-transform: scale(5, 5); /* IE 9 */
+    -webkit-transform: scale(5, 5); /* Safari */
+    transform: scale(5, 5);
+  }
+    .mapbox li:nth-child(8) {
+      top: -21.5em;
+      left: -4em;
+    }
+    .mapbox li:nth-child(5) {
+      top: -7em;
+      left: -2em;
+    }
+    .mapbox li:nth-child(4) {
+      top: -2.5em;
+      left: -1em;
+    }
+    .mapbox li:nth-child(2) {
+      top: 7.5em;
+      left: -1.5em;
+    }
+  
+  #about h3 {
+    line-height: 1.3em;
+  }
+  
+  #missionvision label {
+    font-size: 1.2em;
+  }
+  .mvbox {
+    padding: 2em 0 0;
+  }
+  #vision .contwidth {
+    width: 80%;
+    padding: 2em 0 2.3em;
+  }
+  #vision {
+    padding-bottom: .3em;
+    height: auto;
+  }
+  #mission {
+    height: auto;
+  }
+  
+  
+  #values li {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    margin: 0 0 4em;
+    font-size: .9em;
+  }
+  #values li:nth-child(3n+0) {
+    margin: 0 0 4em;
+  }
+  #values dt {
+    font-size: 1.4em;
+  }
+  
+  #in_the_news li {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    margin: 0 0 4em;
+    font-size: .9em;
+  }
+  #in_the_news li:nth-child(3n+0) {
+    margin: -2em 0 4em;
+  }
+  #in_the_news dt {
+    font-size: 1.4em;
+  }
+  
+  #subsidiaries ul li a span {
+    height: 170px;
+  }
+
+  
+  #departmentsdiv {
+    height:600px; 
+    width:300px;
+  }
+}
+
+@media (max-width: 1024px) {
+#press_page{
+	width: 90%;
+	padding: 5px;
+}
+#press_page  h1 {
+    padding-top: 0.7em;
+    font-size: 1.2em;
+	line-height: 1em;
+  }
+#press_page  h1:after {
+  height: .8em;
+  width: 2.3em;
+  margin: 0 auto 1em;
+  content: '';
+  display: block;
+  position: relative;
+  border-bottom: .1em solid #d82133;
+}
+#press_page  p {    
+    font-size: 1.0em;
+	line-height: 1.2em;
+}
+#press_page  h3{
+	padding: 20px 0px;
+}
+#about_tegra{
+	background-color: #EFEFEF;
+	padding: 20px 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+@media (min-width: 768px) and (max-width: 959px) /*Sm Breakpoint - Tablet*/ {
+  body {
+    font-size: 14px;
+  }
+  .contwidth {
+    width: 50em;
+  }
+  .twocol {
+    width: 24em;
+  }
+  
+  .mapbox {
+    width: 740px;
+    height: auto;
+  }
+  .mapbox ul {
+    top: -7.5em;
+    left: -6em;
+    -ms-transform: scale(0.28, 0.28); /* IE 9 */
+    -webkit-transform: scale(0.28, 0.28); /* Safari */
+    transform: scale(0.28, 0.28);
+  }
+  .mapbox li span {
+    left: 400px;
+    -ms-transform: scale(3, 3); /* IE 9 */
+    -webkit-transform: scale(3, 3); /* Safari */
+    transform: scale(3, 3);
+  }
+    .mapbox li:nth-child(8) {
+      top: -21.5em;
+      left: -4em;
+    }
+    .mapbox li:nth-child(5) {
+      top: -7em;
+      left: -2em;
+    }
+    .mapbox li:nth-child(4) {
+      top: -2.5em;
+      left: -1em;
+    }
+    .mapbox li:nth-child(2) {
+      top: 7.5em;
+      left: -1.5em;
+    }
+  
+  
+  .mvbox {
+    padding: 2em 0 0;
+  }
+  #vision .contwidth {
+    padding: 2em 0 0;
+  }
+  #vision {
+    padding-bottom: .3em;
+  }
+  #mission {
+    height: auto;
+  }
+    
+  #values li {
+    width: 20em;
+    height: 18em;
+    padding: 2em;
+    margin: 0 4em 4em 0;
+    font-size: .9em;
+  }
+  #values li:nth-child(3n+0) {
+    margin: 0 4em 4em 0;
+  }
+  #values li:nth-child(2n+0) {
+    margin: 0 0 4em 0;
+  }
+  #values dt {
+    font-size: 1.6em;
+  }
+  #in_the_news li {	  
+    width: 51.5em;
+    height: 7.5em;
+    padding: 2em;
+    margin: 0 4em 4em 0;
+    font-size: .9em;
+  }
+  #in_the_news li:nth-child(3n+0) {
+    margin: 0 4em 4em 0;
+  }
+  #in_the_news li:nth-child(2n+0) {
+    margin: 0 0 4em 0;
+  }
+  #in_the_news dt {
+    font-size: 1.2em;
+	line-height: 1.2em;
+  }
+  
+  #subsidiaries ul li a span {
+    height: 240px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) /*Med Breakpoint - monitor*/ {body {
+    font-size: 14px;
+  }
+  .contwidth {
+    width: 60em;
+  }
+  .twocol {
+    width: 29em;
+  }
+  
+  .mapbox {
+    width: 840px;
+    height: auto;
+  }
+  .mapbox ul {
+    top: -5.5em;
+    left: -5.3em;
+    -ms-transform: scale(0.33, 0.33); /* IE 9 */
+    -webkit-transform: scale(0.33, 0.33); /* Safari */
+    transform: scale(0.33, 0.33);
+  }
+  .mapbox li span {
+    left: 400px;
+    -ms-transform: scale(3, 3); /* IE 9 */
+    -webkit-transform: scale(3, 3); /* Safari */
+    transform: scale(3, 3);
+  }
+    .mapbox li:nth-child(8) {
+      top: -21.5em;
+      left: -4em;
+    }
+    .mapbox li:nth-child(5) {
+      top: -7em;
+      left: -2em;
+    }
+    .mapbox li:nth-child(4) {
+      top: -2.5em;
+      left: -1em;
+    }
+    .mapbox li:nth-child(2) {
+      top: 7.5em;
+      left: -1.5em;
+    }
+  
+  .mvbox {
+    padding: 2em 0 0;
+  }
+  #vision .contwidth {
+    padding: 2em 0 0;
+  }
+  #vision {
+    padding-bottom: .3em;
+  }  
+  #values li {
+    width: 15em;
+    height: 18em;
+    padding: 2em;
+    margin: 0 3em 3em 0;
+    font-size: .9em;
+  }
+  #values li:nth-child(3n+0) {
+    margin: 0 0 3em 0;
+  }
+  
+  #values dt {
+    font-size: 1.6em;
+  }
+  #in_the_news li {
+    width: 15em;
+    height: 18em;
+    padding: 2em;
+    margin: 0 3em 3em 0;
+    font-size: .9em;
+  }
+  #in_the_news li:nth-child(3n+0) {
+    margin: 0 0 3em 0;
+  }
+  
+  #in_the_news dt {
+    font-size: 1.6em;
+  }
+  
+  #subsidiaries ul li a span {
+    height: 260px;
+  }
+
+ 
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) /*Lg Breakpoint - large monitor*/ {
+  #subsidiaries ul li a span {
+    height: 300px;
+  }
+
+  #departmentsdiv {
+    height:600px; 
+    width:230px;
+    margin-left: 10px;
+  }
+  #rolesdiv {
+    height:600px; 
+    width:480px;
+  }
+  
+}
+
+
+@media (min-width: 1401px) and (max-width: 9000px) /*Lg Breakpoint - large monitor*/ {
+  #subsidiaries ul li a span {
+    height: 300px;
+  }
+
+  
+  
+}

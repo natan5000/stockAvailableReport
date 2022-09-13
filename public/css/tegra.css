@@ -1,0 +1,66 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    line-height: 1.9em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    z-index: 0;
+    background: #fff;
+    color: #25292a;
+    margin: 0;
+    /*margin-bottom: 40px;*/
+  }
+
+  
+.header {
+    text-align: center;
+    /*background: #25292a;*/
+    background: #d82133;
+    border-bottom: 15px solid #d82133;
+  }
+
+  .logo img {
+    margin: 1em;
+    width: 50px;
+  } 
+
+  a{
+	color: #d82133;
+}
+  footer {
+    text-align: center;
+    background: #282a31;
+   font-size: .9em;
+   color: #fff;
+   bottom: 0;
+   position:absolute;
+   width: 100%;;
+  }
+
+  footer ul.social {
+    padding: 2em 0;
+  }
+
+ footer ul.social li {
+    display: inline-block;
+    line-height: 45px;
+    margin: 0 .5em;
+  }
+    footer ul.social li a, #mainfooter ul.social li a:link, #mainfooter ul.social li a:visited {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      border-radius: 40px;
+      border: 2px solid #2b2d7c;
+    }
+    footer ul.social li a:hover, #mainfooter ul.social li a:active, #mainfooter ul.social li a:focus {
+      background: #b72025;
+      border: 2px solid #b72025;
+    }
+
+
+    .divmh{
+        min-height: 850px;
+    }
